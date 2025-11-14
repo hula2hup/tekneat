@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Kantin FTUI</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .payment-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .payment-container h2 {
+            color: #007BFF;
+        }
+        .order-summary {
+            margin-bottom: 20px;
+        }
+        .order-summary p {
+            margin: 5px 0;
+        }
+        .total {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        .qr-code img {
+            max-width: 200px;
+            height: auto;
+        }
+        .instructions {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .instructions h3 {
+            color: #333;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn.confirm {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn.confirm:hover {
+            background-color: #218838;
+        }
+        .btn.cancel {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn.cancel:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Pembayaran Pesanan</h2>
+        <div class="order-summary">
+            <p><strong>Nomor Antrean:</strong> 1</p>
+            <p><strong>Nama Pembeli:</strong> John Doe</p>
+            <p><strong>Pesanan:</strong> Ayam Geprek Level 1 - 1 porsi</p>
+            <div class="total">
+                Total: Rp 15.000
+            </div>
+        </div>
+        <div class="qr-code">
+            <p>Scan QR Code berikut untuk pembayaran:</p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIJSURBVHic7ZxNSBRRFMZ/..." alt="QR Code Pembayaran">
+        </div>
+        <div class="instructions">
+            <h3>Instruksi Pembayaran:</h3>
+            <ol>
+                <li>Buka aplikasi e-wallet Anda (GoPay, OVO, Dana, dll.)</li>
+                <li>Scan QR Code di atas</li>
+                <li>Masukkan jumlah pembayaran yang sesuai</li>
+                <li>Konfirmasi pembayaran</li>
+                <li>Tunggu konfirmasi dari admin</li>
+            </ol>
+        </div>
+        <div class="buttons">
+            <button class="btn confirm">Konfirmasi Pembayaran</button>
+            <button class="btn cancel">Batalkan Pesanan</button>
+        </div>
+    </div>
+</body>
+</html>
